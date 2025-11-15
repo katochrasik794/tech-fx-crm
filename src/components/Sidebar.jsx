@@ -37,12 +37,12 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
         </div>
 
         <nav className="space-y-1">
-          <Link to="/dashboard" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/dashboard' || location.pathname === '/' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/dashboard" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/dashboard' || location.pathname === '/' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <LayoutDashboard className="w-5 h-5" />
             <span className={location.pathname === '/dashboard' || location.pathname === '/' ? 'font-semibold' : 'text-violet-500 font-semibold'}>Dashboard</span>
           </Link>
 
-          <Link to="/regulations" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/regulations' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/regulations" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/regulations' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <Shield className="w-5 h-5" />
             <span>Regulations</span>
           </Link>
@@ -57,8 +57,8 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
             </button>
             {openMenu === 'myfund' && (
               <div className="ml-10 space-y-1">
-                <Link to="/myfund/deposit" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/myfund/deposit' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deposit</Link>
-                <Link to="/myfund/withdrawal" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/myfund/withdrawal' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Withdrawal</Link>
+                <Link to="/myfund/deposit" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/myfund/deposit' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deposit</Link>
+                <Link to="/myfund/withdrawal" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/myfund/withdrawal' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Withdrawal</Link>
               </div>
             )}
           </div>
@@ -73,18 +73,18 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
             </button>
             {openMenu === 'ib' && (
               <div className="ml-10 space-y-1">
-                <Link to="/ib/dashboard" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/dashboard' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Dashboard</Link>
-                <Link to="/ib/clients" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/clients' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>My Clients</Link>
-                <Link to="/ib/tree" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/tree' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Tree Chart</Link>
-                <Link to="/ib/commission" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/commission' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>My Commission</Link>
-                <Link to="/ib/withdraw" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/withdraw' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Withdraw</Link>
-                <Link to="/ib/team-deposit" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/team-deposit' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Team Deposit Report</Link>
-                <Link to="/ib/team-withdraw" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/team-withdraw' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Team Withdraw Report</Link>
+                <Link to="/ib/dashboard" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/dashboard' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Dashboard</Link>
+                <Link to="/ib/clients" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/clients' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>My Clients</Link>
+                <Link to="/ib/tree" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/tree' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Tree Chart</Link>
+                <Link to="/ib/commission" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/commission' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>My Commission</Link>
+                <Link to="/ib/withdraw" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/withdraw' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>IB Withdraw</Link>
+                <Link to="/ib/team-deposit" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/team-deposit' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Team Deposit Report</Link>
+                <Link to="/ib/team-withdraw" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/ib/team-withdraw' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Team Withdraw Report</Link>
               </div>
             )}
           </div>
 
-          <Link to="/copier" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/copier' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/copier" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/copier' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <Copy className="w-5 h-5" />
             <span>Copier</span>
           </Link>
@@ -99,31 +99,31 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
             </button>
             {openMenu === 'data' && (
               <div className="ml-10 space-y-1">
-                <Link to="/mydata/deposit-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/deposit-report' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deposit Report</Link>
-                <Link to="/mydata/withdraw-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/withdraw-report' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Withdraw Report</Link>
-                <Link to="/mydata/internal-transfers" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/internal-transfers' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Internal Transfers</Link>
-                <Link to="/mydata/deal-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/deal-report' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deal Report</Link>
-                <Link to="/mydata/summary-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/summary-report' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>Summary Report</Link>
+                <Link to="/mydata/deposit-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/deposit-report' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deposit Report</Link>
+                <Link to="/mydata/withdraw-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/withdraw-report' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Withdraw Report</Link>
+                <Link to="/mydata/internal-transfers" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/internal-transfers' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Internal Transfers</Link>
+                <Link to="/mydata/deal-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/deal-report' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Deal Report</Link>
+                <Link to="/mydata/summary-report" onClick={handleLinkClick} className={`block p-2 rounded text-sm ${location.pathname === '/mydata/summary-report' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>Summary Report</Link>
               </div>
             )}
           </div>
 
-          <Link to="/trade-and-win" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/trade-and-win' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/trade-and-win" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/trade-and-win' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <Trophy className="w-5 h-5" />
             <span>Trade And Win</span>
           </Link>
 
-          <Link to="/wallet" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/wallet' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/wallet" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/wallet' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <CreditCard className="w-5 h-5" />
             <span>My Wallet</span>
           </Link>
 
-          <Link to="/news" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/news' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/news" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/news' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <Newspaper className="w-5 h-5" />
             <span>News</span>
           </Link>
 
-          <Link to="/support" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/support' ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>
+          <Link to="/support" onClick={handleLinkClick} className={`flex items-center gap-3 p-3 rounded ${location.pathname === '/support' ? 'bg-violet-500 text-white' : 'hover:bg-gray-100'}`}>
             <Headphones className="w-5 h-5" />
             <span>Support</span>
           </Link>
