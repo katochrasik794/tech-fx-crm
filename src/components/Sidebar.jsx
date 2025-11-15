@@ -53,7 +53,7 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
                 <Wallet className="w-5 h-5" />
                 <span>My Fund</span>
               </div>
-              <span className="text-xl">{openMenu === 'myfund' ? '−' : '+'}</span>
+              <span className="text-xl text-black">{openMenu === 'myfund' ? '−' : '+'}</span>
             </button>
             {openMenu === 'myfund' && (
               <div className="ml-10 space-y-1">
@@ -69,7 +69,7 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
                 <Users className="w-5 h-5" />
                 <span>IB Programme</span>
               </div>
-              <span className="text-xl">{openMenu === 'ib' ? '−' : '+'}</span>
+              <span className="text-xl text-black">{openMenu === 'ib' ? '−' : '+'}</span>
             </button>
             {openMenu === 'ib' && (
               <div className="ml-10 space-y-1">
@@ -95,7 +95,7 @@ function Sidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
                 <BarChart3 className="w-5 h-5" />
                 <span>My Data</span>
               </div>
-              <span className="text-xl">{openMenu === 'data' ? '−' : '+'}</span>
+              <span className="text-xl text-black">{openMenu === 'data' ? '−' : '+'}</span>
             </button>
             {openMenu === 'data' && (
               <div className="ml-10 space-y-1">
