@@ -44,7 +44,7 @@ function IBDashboard() {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2" />
                 <p className="font-semibold text-sm sm:text-base">My Commission</p>
               </Link>
-              <Link to="/ib/withdraw" className="bg-orange-500 hover:bg-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-lg sm:rounded-xl text-center transition">
+              <Link to="/ib/withdraw" className="text-violet-500 hover:bg-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-lg sm:rounded-xl text-center transition">
                 <Banknote className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2" />
                 <p className="font-semibold text-sm sm:text-base">IB Withdraw</p>
               </Link>

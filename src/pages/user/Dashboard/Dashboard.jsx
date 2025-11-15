@@ -125,7 +125,7 @@ function Dashboard() {
                       key={account}
                       onClick={() => setActiveAccount(index)}
                       className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium transition-colors ${
-                        index === activeAccount ? 'bg-orange-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        index === activeAccount ? 'text-violet-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
                       {account}

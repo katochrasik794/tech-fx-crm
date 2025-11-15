@@ -50,7 +50,7 @@ function Accounts() {
                 <td className="px-2 sm:px-4 py-3 font-bold text-xs sm:text-sm">{account.balance}</td>
                 <td className="px-2 sm:px-4 py-3 text-gray-600 text-xs sm:text-sm">{account.leverage}</td>
                 <td className="px-2 sm:px-4 py-3">
-                  <button className="text-orange-500 hover:text-orange-600 text-xs sm:text-sm font-semibold">View</button>
+                  <button className="text-violet-500 hover:text-orange-600 text-xs sm:text-sm font-semibold">View</button>
                 </td>
               </tr>
             ))}

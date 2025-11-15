@@ -11,7 +11,7 @@ function AdminHeader() {
       </button>
       <div className="flex items-center gap-2 flex-1 max-w-md mx-2">
         <input type="text" placeholder="Search..." className="flex-1 border rounded-lg px-2 sm:px-3 py-1 text-xs" />
-        <button className="p-1.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600">
+        <button className="p-1.5 text-violet-500 text-white rounded-lg hover:bg-orange-600">
           <Search className="w-4 h-4" />
         </button>
       </div>

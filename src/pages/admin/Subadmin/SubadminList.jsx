@@ -9,7 +9,7 @@ const SubadminList = () => {
 
   const subadmins = [
     { id: 1, name: 'Admin', email: 'subadmindemots@demo.com', password: 'Admin@23r4dni3@@#', type: 'Menu Wise', group: '', date: '2025-11-03' },
-    { id: 2, name: 'Techysquad', email: 'tscompe@techysquad.com', password: 'T$@dmin#999', type: 'Menu Wise', group: '', date: '2025-11-04' },
+    { id: 2, name: 'FinCRM', email: 'tscompe@FinCRM.com', password: 'T$@dmin#999', type: 'Menu Wise', group: '', date: '2025-11-04' },
     { id: 3, name: 'subadmin 1', email: 'subadmin1@demo.com', password: 'Demo@212213', type: 'MT5 Group Wise', group: '', date: '2025-11-06' },
     { id: 4, name: 'newtest', email: 'newtestdemo@demo.com', password: 'bceiew#@4', type: 'Menu Wise', group: '', date: '2025-11-06' }
   ];
@@ -63,7 +63,7 @@ const SubadminList = () => {
                     <td className="py-0.5 px-2">{admin.group || '-'}</td>
                     <td className="py-0.5 px-2">{admin.date}</td>
                     <td className="py-0.5 px-2">
-                      <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">
+                      <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs">
                         Edit Permission
                       </button>
                     </td>
@@ -77,7 +77,7 @@ const SubadminList = () => {
             <div>Showing 1 to {subadmins.length} of {subadmins.length} entries</div>
             <div className="flex gap-1">
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Previous</button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">1</button>
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">1</button>
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Next</button>
             </div>
           </div>

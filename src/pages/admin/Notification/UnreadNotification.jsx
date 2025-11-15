@@ -30,7 +30,7 @@ const UnreadNotification = () => {
               </div>
               <button
                 onClick={() => handleMarkRead(notification.id)}
-                className="bg-orange-500 text-white px-3 py-1 rounded text-xs"
+                className="text-violet-500 text-white px-3 py-1 rounded text-xs"
               >
                 Mark Read
               </button>

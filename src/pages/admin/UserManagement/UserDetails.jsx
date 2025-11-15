@@ -51,12 +51,12 @@ function UserDetails() {
 
         <div className="bg-white rounded-2xl p-6 shadow-sm">
           <div className="flex gap-2 mb-6 border-b">
-            <button onClick={() => setActiveTab('deposit')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'deposit' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Deposit List</button>
-            <button onClick={() => setActiveTab('withdraw')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'withdraw' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Withdraw List</button>
-            <button onClick={() => setActiveTab('mt5')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'mt5' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>MT5 Account</button>
-            <button onClick={() => setActiveTab('bank')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'bank' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Bank Details</button>
-            <button onClick={() => setActiveTab('login')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'login' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Login Activity</button>
-            <button onClick={() => setActiveTab('referral')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'referral' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Refferal By</button>
+            <button onClick={() => setActiveTab('deposit')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'deposit' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Deposit List</button>
+            <button onClick={() => setActiveTab('withdraw')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'withdraw' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Withdraw List</button>
+            <button onClick={() => setActiveTab('mt5')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'mt5' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>MT5 Account</button>
+            <button onClick={() => setActiveTab('bank')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'bank' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Bank Details</button>
+            <button onClick={() => setActiveTab('login')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'login' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Login Activity</button>
+            <button onClick={() => setActiveTab('referral')} className={`px-6 py-3 font-medium transition-colors ${activeTab === 'referral' ? 'text-violet-500 border-b-2 border-orange-500' : 'text-gray-500 hover:text-gray-700'}`}>Refferal By</button>
           </div>
 
           <div className="flex justify-between items-center mb-6">

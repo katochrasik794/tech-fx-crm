@@ -71,7 +71,7 @@ function ChangeUserSettings() {
               </select>
             </div>
             <div className="pt-4">
-              <button type="submit" className="px-6 py-2.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Submit</button>
+              <button type="submit" className="px-6 py-2.5 text-violet-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Submit</button>
             </div>
           </form>
         </div>

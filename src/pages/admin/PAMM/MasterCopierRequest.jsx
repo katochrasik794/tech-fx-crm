@@ -42,7 +42,7 @@ const MasterCopierRequest = () => {
               <option value={100}>100</option>
             </select>
             <span>entries</span>
-            <button className="ml-2 bg-orange-500 text-white px-3 py-1 rounded text-xs flex items-center gap-1">
+            <button className="ml-2 text-violet-500 text-white px-3 py-1 rounded text-xs flex items-center gap-1">
               <FileDown className="w-3 h-3" />
               Excel
             </button>
@@ -123,7 +123,7 @@ const MasterCopierRequest = () => {
             >
               Previous
             </button>
-            <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">
+            <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">
               1
             </button>
             <button

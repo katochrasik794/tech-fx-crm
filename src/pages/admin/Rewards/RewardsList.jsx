@@ -74,10 +74,10 @@ const RewardsList = () => {
                     <td className="py-0.5 px-2 text-green-600">{reward.status}</td>
                     <td className="py-0.5 px-2">
                       <div className="flex gap-1">
-                        <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
+                        <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
                           <Edit className="w-3 h-3" /> Edit
                         </button>
-                        <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
+                        <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
                           <Trash2 className="w-3 h-3" /> Delete
                         </button>
                       </div>
@@ -92,7 +92,7 @@ const RewardsList = () => {
             <div>Showing 1 to {rewards.length} of {rewards.length} entries</div>
             <div className="flex gap-1">
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Previous</button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">1</button>
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">1</button>
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Next</button>
             </div>
           </div>

@@ -53,7 +53,7 @@ const SendEmail = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
             <button
               type="submit"
-              className="px-4 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
+              className="px-4 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm text-violet-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
             >
               Submit
             </button>

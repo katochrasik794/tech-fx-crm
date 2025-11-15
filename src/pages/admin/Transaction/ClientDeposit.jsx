@@ -38,7 +38,7 @@ function ClientDeposit() {
               <label className="block text-xs font-medium mb-1">Comment <span className="text-red-500">*</span></label>
               <input type="text" placeholder="Enter comment" className="w-full px-2 py-1.5 text-sm border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent" value={formData.comment} onChange={(e) => setFormData({...formData, comment: e.target.value})} required />
             </div>
-          <button type="submit" className="px-4 py-1.5 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">Submit</button>
+          <button type="submit" className="px-4 py-1.5 text-sm text-violet-500 text-white rounded hover:bg-orange-600">Submit</button>
         </ResponsiveForm>
       </div>
     </ResponsiveAdminLayout>

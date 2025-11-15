@@ -16,7 +16,7 @@ function ResendMT5DataMail() {
               <option value="1001235">1001235</option>
             </select>
           </div>
-          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm bg-orange-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
+          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm text-violet-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
         </form>
       </div>
     </ResponsiveAdminLayout>

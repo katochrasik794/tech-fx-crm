@@ -29,7 +29,7 @@ function AddExistingClient() {
             <input type="text" placeholder="11111,222222" className="w-full px-3 py-1.5 text-xs sm:text-sm border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" value={formData.mt5Id} onChange={(e) => setFormData({...formData, mt5Id: e.target.value})} />
             <p className="text-[10px] text-gray-500 mt-0.5">Enter comma separated value for multiple account.</p>
           </div>
-          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm bg-orange-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
+          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm text-violet-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
         </form>
       </div>
     </ResponsiveAdminLayout>

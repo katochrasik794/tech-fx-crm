@@ -43,7 +43,7 @@ const ScalpingReport = () => {
                 <option value={50}>50</option>
               </select>
               <span>entries</span>
-              <button className="ml-2 bg-orange-500 text-white px-3 py-1 rounded text-xs">Excel</button>
+              <button className="ml-2 text-violet-500 text-white px-3 py-1 rounded text-xs">Excel</button>
             </div>
             <div className="relative">
               <Search className="w-4 h-4 absolute left-2 top-1.5 text-gray-400" />
@@ -90,7 +90,7 @@ const ScalpingReport = () => {
             </div>
             <div className="flex gap-1">
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Previous</button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">1</button>
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">1</button>
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Next</button>
             </div>
           </div>

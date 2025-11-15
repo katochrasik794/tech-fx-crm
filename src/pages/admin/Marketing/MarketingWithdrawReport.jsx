@@ -71,7 +71,7 @@ function MarketingWithdrawReport() {
                     <td className="py-0.5 px-2 text-xs"><span className={`px-1.5 py-0.5 rounded text-xs ${item.status === 'Completed' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}`}>{item.status}</span></td>
                     <td className="py-0.5 px-2 text-xs">{item.date}</td>
                     <td className="py-0.5 px-2 text-xs">
-                      <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">View</button>
+                      <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">View</button>
                     </td>
                   </tr>
                 ))}

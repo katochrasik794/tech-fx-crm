@@ -4,8 +4,8 @@ import AdminSidebar from '../../../components/AdminSidebar'
 
 function Settings() {
   const [settings, setSettings] = useState({
-    siteName: 'TechySquad',
-    email: 'admin@techysquad.com',
+    siteName: 'FinCRM',
+    email: 'admin@FinCRM.com',
     minDeposit: '10',
     maxWithdraw: '10000',
     commission: '5'
@@ -44,7 +44,7 @@ function Settings() {
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
-            <button type="submit" className="flex items-center gap-2 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
+            <button type="submit" className="flex items-center gap-2 text-violet-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
               <Save className="w-5 h-5" />
               Save Changes
             </button>
@@ -81,7 +81,7 @@ function Settings() {
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
-            <button type="submit" className="flex items-center gap-2 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
+            <button type="submit" className="flex items-center gap-2 text-violet-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
               <Save className="w-5 h-5" />
               Save Changes
             </button>

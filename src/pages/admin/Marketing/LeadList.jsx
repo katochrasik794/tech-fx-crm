@@ -20,9 +20,9 @@ function LeadList() {
   })
   
   const leadsData = [
-    { serial: 1, marketingAdmin: 'Techysquad', name: 'Client Name2', phone: '9876543212', email: 'clientname2@testing.com', country: 'India', source: 'source1', status: 'statys 1', description: 'client description' },
+    { serial: 1, marketingAdmin: 'FinCRM', name: 'Client Name2', phone: '9876543212', email: 'clientname2@testing.com', country: 'India', source: 'source1', status: 'statys 1', description: 'client description' },
     { serial: 2, marketingAdmin: 'John Smith', name: 'Client Name', phone: '9876543210', email: 'clientname@testing.com', country: 'India', source: '19', status: '5', description: 'client description' },
-    { serial: 3, marketingAdmin: 'Techysquad', name: 'demo', phone: '9238298329', email: 'demo2@demo22.com', country: 'India', source: '12', status: '2', description: 'deioew' },
+    { serial: 3, marketingAdmin: 'FinCRM', name: 'demo', phone: '9238298329', email: 'demo2@demo22.com', country: 'India', source: '12', status: '2', description: 'deioew' },
   ]
 
   const filteredData = leadsData.filter(item => 
@@ -42,7 +42,7 @@ function LeadList() {
       <div className="flex-1 lg:ml-64 mt-12 p-4 lg:p-8 w-full bg-gray-50 min-h-screen">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-lg font-bold">Leads</h1>
-          <button onClick={() => setShowForm(true)} className="px-4 py-1.5 text-sm bg-orange-500 text-white rounded hover:bg-orange-600 flex items-center gap-1">
+          <button onClick={() => setShowForm(true)} className="px-4 py-1.5 text-sm text-violet-500 text-white rounded hover:bg-orange-600 flex items-center gap-1">
             <span>+</span> Add
           </button>
         </div>
@@ -162,7 +162,7 @@ function LeadList() {
                 </div>
               </div>
               <div className="flex gap-2 mt-4">
-                <button type="submit" className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm">
+                <button type="submit" className="text-violet-500 text-white px-4 py-1.5 rounded text-sm">
                   Submit
                 </button>
                 <button type="button" onClick={() => {
@@ -222,11 +222,11 @@ function LeadList() {
                     <td className="py-0.5 px-2 text-xs">{item.description}</td>
                     <td className="py-0.5 px-2 text-xs">
                       <div className="flex gap-1 flex-wrap">
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">View</button>
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Delete</button>
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Assign To</button>
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Convert</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">View</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Delete</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Assign To</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Convert</button>
                       </div>
                     </td>
                   </tr>
@@ -239,7 +239,7 @@ function LeadList() {
             <div className="flex gap-2">
               <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Previous</button>
               {[...Array(totalPages)].map((_, i) => (
-                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
               ))}
               <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Next</button>
             </div>

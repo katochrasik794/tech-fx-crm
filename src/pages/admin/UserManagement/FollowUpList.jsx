@@ -10,7 +10,7 @@ function FollowUpList() {
   const [currentPage, setCurrentPage] = useState(1)
   
   const followUpsData = [
-    { id: 1, name: 'demo', email: 'har33h@techysquad.com', phone: '+91 09884543210', country: 'India', date: '2025-11-06', marketingName: 'Developer Account' },
+    { id: 1, name: 'demo', email: 'har33h@FinCRM.com', phone: '+91 09884543210', country: 'India', date: '2025-11-06', marketingName: 'Developer Account' },
     { id: 2, name: 'moazzam hussain', email: 'moazzamjanjua92@gmail.com', phone: '+92 03468783587', country: 'Pakistan', date: '2025-10-29', marketingName: '' },
     { id: 3, name: 'real star110', email: 'javaga7582@pih7h.com', phone: '+973 546789169', country: 'Bahrain', date: '2025-10-28', marketingName: '' },
     { id: 4, name: 'Satish Hirpara', email: 's.k.hirpara@gmail.com', phone: '09726908414', country: 'India', date: '2025-10-27', marketingName: 'John Smith' },
@@ -62,7 +62,7 @@ function FollowUpList() {
               <option value={100}>100</option>
             </select>
             <span className="whitespace-nowrap">entries</span>
-            <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">Excel</button>
+            <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 text-violet-500 text-white rounded hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">Excel</button>
           </div>
           <div className="flex items-center gap-2 w-full sm:w-auto min-w-0">
             <span className="text-xs sm:text-sm whitespace-nowrap flex-shrink-0">Search:</span>
@@ -120,7 +120,7 @@ function FollowUpList() {
             const pageNum = i + 1
             if (pageNum === 1 || pageNum === totalPages || (pageNum >= currentPage - 2 && pageNum <= currentPage + 2)) {
               return (
-                <button key={pageNum} onClick={() => setCurrentPage(pageNum)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === pageNum ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{pageNum}</button>
+                <button key={pageNum} onClick={() => setCurrentPage(pageNum)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === pageNum ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{pageNum}</button>
               )
             } else if (pageNum === currentPage - 3 || pageNum === currentPage + 3) {
               return <button key={pageNum} disabled className="px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm opacity-50 whitespace-nowrap">...</button>

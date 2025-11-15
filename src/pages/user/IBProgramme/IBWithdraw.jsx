@@ -55,7 +55,7 @@ function IBWithdraw() {
                   </select>
                 </div>
 
-                <button className="w-full bg-orange-500 text-white py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 text-xs sm:text-sm">
+                <button className="w-full text-violet-500 text-white py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 text-xs sm:text-sm">
                   Request Withdrawal
                 </button>
               </div>

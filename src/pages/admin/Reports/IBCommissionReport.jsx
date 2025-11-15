@@ -38,7 +38,7 @@ const IBCommissionReport = () => {
                 className="border border-gray-300 rounded px-2 py-1.5 text-sm"
               />
             </div>
-            <button type="submit" className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm">
+            <button type="submit" className="text-violet-500 text-white px-4 py-1.5 rounded text-sm">
               Submit
             </button>
           </div>

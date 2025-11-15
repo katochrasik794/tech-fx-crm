@@ -180,7 +180,7 @@ function Regulations() {
 
                   <button
                     type="submit"
-                    className="w-full bg-orange-500 text-white py-2.5 sm:py-3 rounded-full font-semibold hover:bg-orange-600 flex items-center justify-center gap-2 text-xs sm:text-sm"
+                    className="w-full text-violet-500 text-white py-2.5 sm:py-3 rounded-full font-semibold hover:bg-orange-600 flex items-center justify-center gap-2 text-xs sm:text-sm"
                   >
                     Submit Details
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

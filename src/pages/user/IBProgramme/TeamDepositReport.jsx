@@ -46,7 +46,7 @@ function TeamDepositReport() {
                       className="w-full px-3 sm:px-4 py-2 text-xs sm:text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                   </div>
-                  <button className="bg-orange-500 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg self-end sm:self-auto hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">
+                  <button className="text-violet-500 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg self-end sm:self-auto hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">
                     Search
                   </button>
                 </div>

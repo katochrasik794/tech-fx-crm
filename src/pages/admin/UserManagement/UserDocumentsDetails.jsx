@@ -83,7 +83,7 @@ function UserDocumentsDetails() {
             </div>
             <div className="flex gap-2">
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Previous</button>
-              <button className="px-3 py-1 bg-orange-500 text-white rounded">1</button>
+              <button className="px-3 py-1 text-violet-500 text-white rounded">1</button>
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Next</button>
             </div>
           </div>

@@ -70,8 +70,8 @@ const TicketsList = () => {
                     </td>
                     <td className="py-0.5 px-2">
                       <div className="flex flex-col gap-1">
-                        <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">View</button>
-                        <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">Close</button>
+                        <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs">View</button>
+                        <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs">Close</button>
                       </div>
                     </td>
                   </tr>
@@ -84,7 +84,7 @@ const TicketsList = () => {
             <div>Showing 1 to 10 of 10 entries</div>
             <div className="flex gap-1">
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Previous</button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">1</button>
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">1</button>
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Next</button>
             </div>
           </div>

@@ -30,7 +30,7 @@ function InvestorPAMMRequest() {
                 <option value={50}>50</option>
               </select>
               <span>entries</span>
-              <button className="ml-2 px-2.5 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Excel</button>
+              <button className="ml-2 px-2.5 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Excel</button>
             </div>
             <div className="relative w-64">
               <Search className="absolute left-2 top-1.5 w-4 h-4 text-gray-400" />

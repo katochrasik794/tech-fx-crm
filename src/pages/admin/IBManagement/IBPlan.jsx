@@ -56,7 +56,7 @@ function IBPlan() {
       <div className="flex-1 lg:ml-64 mt-12 p-4 lg:p-8 w-full bg-gray-50 min-h-screen">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-xl font-bold">IB Plan List</h1>
-          <Link to="/admin/ib/plan/add" className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 text-sm">Add IB Plan</Link>
+          <Link to="/admin/ib/plan/add" className="px-4 py-2 text-violet-500 text-white rounded hover:bg-orange-600 text-sm">Add IB Plan</Link>
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm">
           <div className="flex justify-between items-center mb-6">
@@ -99,7 +99,7 @@ function IBPlan() {
             <div className="flex gap-2">
               <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Previous</button>
               {[...Array(totalPages)].map((_, i) => (
-                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
               ))}
               <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Next</button>
             </div>

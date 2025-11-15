@@ -70,7 +70,7 @@ function TradeAndWin() {
                       </div>
                       <h3 className="font-semibold mb-2 text-xs sm:text-sm line-clamp-2">{prize.title}</h3>
                       <p className="text-base sm:text-lg font-bold mb-2">{prize.lots} lots</p>
-                      <button className="text-orange-500 text-xs sm:text-sm font-semibold">Trade {prize.lots} lots to order</button>
+                      <button className="text-violet-500 text-xs sm:text-sm font-semibold">Trade {prize.lots} lots to order</button>
                     </div>
                   ))}
                 </div>
@@ -84,7 +84,7 @@ function TradeAndWin() {
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />
                     <p className="text-xs sm:text-sm text-gray-600 mb-2">Chat with us</p>
-                    <button className="bg-orange-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
+                    <button className="text-violet-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
                   </div>
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />

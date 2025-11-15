@@ -20,7 +20,7 @@ function ChangeUserPassword() {
             <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Password <span className="text-red-500">*</span></label>
             <input type="password" placeholder="Enter Password" className="w-full px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" value={formData.password} onChange={(e) => setFormData({...formData, password: e.target.value})} />
           </div>
-          <button type="submit" className="px-4 sm:px-6 py-2 text-xs sm:text-sm bg-orange-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
+          <button type="submit" className="px-4 sm:px-6 py-2 text-xs sm:text-sm text-violet-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
         </form>
       </div>
     </ResponsiveAdminLayout>

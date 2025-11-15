@@ -8,7 +8,7 @@ function UserList() {
   const [entries, setEntries] = useState(10)
   
   const usersData = [
-    { id: 1, name: 'demo', email: 'har33h@techysquad.com', phone: '+91 9884543210', country: 'India', walletBalance: 0, ibName: '', registrationDate: '2025-11-06', google2FA: '', marketingName: 'Developer Account' },
+    { id: 1, name: 'demo', email: 'har33h@FinCRM.com', phone: '+91 9884543210', country: 'India', walletBalance: 0, ibName: '', registrationDate: '2025-11-06', google2FA: '', marketingName: 'Developer Account' },
     { id: 2, name: 'moazzam hussain', email: 'moazzamjanjua92@gmail.com', phone: '+92 03468783567', country: 'Pakistan', walletBalance: 0, ibName: '', registrationDate: '2025-10-29', google2FA: '', marketingName: '' },
     { id: 3, name: 'real star110', email: 'javaga7582@pih7h.com', phone: '+973 546789169', country: 'Bahrain', walletBalance: 0, ibName: '', registrationDate: '2025-10-28', google2FA: '', marketingName: '' },
     { id: 4, name: 'Satish Hirpara', email: 's.k.hirpara@gmail.com', phone: '09726908414', country: 'India', walletBalance: 0, ibName: '', registrationDate: '2025-10-27', google2FA: '', marketingName: 'John Smith' },
@@ -88,14 +88,14 @@ function UserList() {
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '120px', minWidth: '120px', maxWidth: '120px', boxSizing: 'border-box', overflow: 'hidden' }}>{user.marketingName || '-'}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '160px', minWidth: '160px', maxWidth: '160px', boxSizing: 'border-box', overflow: 'hidden' }}>
                   <div className="flex gap-0.5 sm:gap-1" style={{ maxWidth: '100%' }}>
-                    <Link to="/admin/user/edit" className="p-0.5 sm:p-1 bg-orange-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Edit className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
-                    <Link to="/admin/user/details" className="p-0.5 sm:p-1 bg-orange-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Eye className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
-                    <Link to="/admin/user/settings" className="p-0.5 sm:p-1 bg-orange-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Settings className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
-                    <button className="p-0.5 sm:p-1 bg-orange-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Trash2 className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></button>
+                    <Link to="/admin/user/edit" className="p-0.5 sm:p-1 text-violet-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Edit className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
+                    <Link to="/admin/user/details" className="p-0.5 sm:p-1 text-violet-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Eye className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
+                    <Link to="/admin/user/settings" className="p-0.5 sm:p-1 text-violet-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Settings className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></Link>
+                    <button className="p-0.5 sm:p-1 text-violet-500 text-white rounded hover:bg-orange-600 flex-shrink-0"><Trash2 className="w-2.5 h-2.5 sm:w-3 sm:h-3" /></button>
                   </div>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '120px', minWidth: '120px', maxWidth: '120px', boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <button className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Promote As IB</button>
+                  <button className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Promote As IB</button>
                 </td>
               </tr>
             ))}

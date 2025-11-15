@@ -74,7 +74,7 @@ function Header() {
             </div>
           )}
         </div>
-        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden p-2 bg-orange-500 rounded-lg text-white">
+        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden p-2 text-violet-500 rounded-lg text-white">
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
         </div>

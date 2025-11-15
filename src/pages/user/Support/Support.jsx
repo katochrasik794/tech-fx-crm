@@ -45,7 +45,7 @@ function Support() {
                     <option>Resolved</option>
                     <option>Closed</option>
                   </select>
-                  <button className="bg-orange-500 text-white px-6 sm:px-8 py-2 rounded-lg hover:bg-orange-600 text-sm sm:text-base">
+                  <button className="text-violet-500 text-white px-6 sm:px-8 py-2 rounded-lg hover:bg-orange-600 text-sm sm:text-base">
                     Search
                   </button>
                 </div>
@@ -68,7 +68,7 @@ function Support() {
                             <p className="text-sm sm:text-base font-semibold">{ticket.type}</p>
                           </div>
                         </div>
-                        <span className="px-3 sm:px-4 py-1 bg-orange-500 text-white rounded-full text-xs self-start sm:self-auto">{ticket.status}</span>
+                        <span className="px-3 sm:px-4 py-1 text-violet-500 text-white rounded-full text-xs self-start sm:self-auto">{ticket.status}</span>
                       </div>
                       
                       <div className="mb-3 sm:mb-4">
@@ -100,7 +100,7 @@ function Support() {
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />
                     <p className="text-xs sm:text-sm text-gray-600 mb-2">Chat with us</p>
-                    <button className="bg-orange-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
+                    <button className="text-violet-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
                   </div>
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />

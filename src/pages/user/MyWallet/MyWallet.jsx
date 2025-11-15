@@ -35,7 +35,7 @@ function MyWallet() {
                     <ArrowDownToLine className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 mx-auto mb-2" />
                     <p className="text-sm sm:text-base font-semibold">Deposit</p>
                   </Link>
-                  <Link to="/myfund/withdrawal" className="bg-orange-500 hover:bg-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-lg sm:rounded-xl text-center transition">
+                  <Link to="/myfund/withdrawal" className="text-violet-500 hover:bg-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-lg sm:rounded-xl text-center transition">
                     <ArrowUpFromLine className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 mx-auto mb-2" />
                     <p className="text-sm sm:text-base font-semibold">Withdraw</p>
                   </Link>
@@ -115,7 +115,7 @@ function MyWallet() {
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />
                     <p className="text-xs sm:text-sm text-gray-600 mb-2">Chat with us</p>
-                    <button className="bg-orange-500 text-white px-3 sm:px-4 py-1 rounded-full text-xs">Click here</button>
+                    <button className="text-violet-500 text-white px-3 sm:px-4 py-1 rounded-full text-xs">Click here</button>
                   </div>
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />

@@ -37,7 +37,7 @@ function UpdateMT5Group() {
                 <option value="VIP">VIP</option>
               </select>
             </div>
-            <button type="submit" className="px-4 py-1.5 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">Submit</button>
+            <button type="submit" className="px-4 py-1.5 text-sm text-violet-500 text-white rounded hover:bg-orange-600">Submit</button>
           </form>
         </div>
       </div>

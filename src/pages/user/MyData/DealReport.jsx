@@ -45,7 +45,7 @@ function DealReport() {
                       className="w-full px-3 sm:px-4 py-2 text-xs sm:text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                   </div>
-                  <button className="bg-orange-500 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg self-end sm:self-auto hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">
+                  <button className="text-violet-500 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg self-end sm:self-auto hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">
                     Search
                   </button>
                 </div>
@@ -78,7 +78,7 @@ function DealReport() {
                     <p className="font-bold text-lg sm:text-xl">$100</p>
                   </div>
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                    <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 mx-auto mb-2 text-orange-500" />
+                    <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 mx-auto mb-2 text-violet-500" />
                     <p className="text-xs text-gray-500 mb-1">Total Withdraw</p>
                     <p className="font-bold text-lg sm:text-xl">$0</p>
                   </div>

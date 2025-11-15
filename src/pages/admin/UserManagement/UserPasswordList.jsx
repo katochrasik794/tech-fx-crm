@@ -9,7 +9,7 @@ function UserPasswordList() {
   const [sortOrder, setSortOrder] = useState('asc')
   
   const users = [
-    { id: 1, name: 'demo', email: 'hars3h@techysquad.com', phone: '+91 09846543210', password: '12345678', userType: 'IB' },
+    { id: 1, name: 'demo', email: 'hars3h@FinCRM.com', phone: '+91 09846543210', password: '12345678', userType: 'IB' },
     { id: 2, name: 'moazzam hussain', email: 'moazzamjanjua92@gmail.com', phone: '+92 03468763587', password: 'moazzamjanjua92@gmail.com', userType: 'Client' },
     { id: 3, name: 'real star110', email: 'javoga7582@hh7f.com', phone: '+973 546789169', password: 'javoga7582@hh7f.com', userType: 'Client' },
     { id: 4, name: 'Satish Hirpara', email: 's.k.hirpara@gmail.com', phone: '09726908414', password: '123987', userType: 'Client' },
@@ -99,7 +99,7 @@ function UserPasswordList() {
             </div>
             <div className="flex gap-1">
               <button className="px-2 py-0.5 border rounded hover:bg-gray-50 text-xs">Previous</button>
-              <button className="px-2 py-0.5 bg-orange-500 text-white rounded text-xs">1</button>
+              <button className="px-2 py-0.5 text-violet-500 text-white rounded text-xs">1</button>
               <button className="px-2 py-0.5 border rounded hover:bg-gray-50 text-xs">Next</button>
             </div>
           </div>

@@ -35,7 +35,7 @@ function BonusList() {
                 <option value={50}>50</option>
               </select>
               <span className="text-sm">entries</span>
-              <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-500 text-white rounded hover:bg-orange-600 text-sm whitespace-nowrap">Excel</button>
+              <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 text-violet-500 text-white rounded hover:bg-orange-600 text-sm whitespace-nowrap">Excel</button>
             </div>
             <div className="relative w-full sm:w-80 min-w-0">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />

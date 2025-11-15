@@ -22,7 +22,7 @@ function BulkLeadUpload() {
               <label className="block text-xs font-medium mb-1">Select File <span className="text-red-500">*</span></label>
               <input type="file" accept=".csv,.xlsx" className="w-full px-2 py-1.5 text-sm border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent" onChange={(e) => setFormData({...formData, file: e.target.files[0]})} required />
             </div>
-            <button type="submit" className="px-4 py-1.5 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">Upload</button>
+            <button type="submit" className="px-4 py-1.5 text-sm text-violet-500 text-white rounded hover:bg-orange-600">Upload</button>
           </form>
         </div>
       </div>

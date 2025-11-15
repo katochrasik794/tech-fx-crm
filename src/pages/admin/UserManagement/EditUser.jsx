@@ -5,7 +5,7 @@ import { User, Mail, Phone, Globe, Tag } from 'lucide-react'
 
 function EditUser() {
   const [formData, setFormData] = useState({
-    name: 'demo', email: 'har33h@techysquad.com', phone: '+91 9884543210', country: 'India', marketingName: 'Developer Account'
+    name: 'demo', email: 'har33h@FinCRM.com', phone: '+91 9884543210', country: 'India', marketingName: 'Developer Account'
   })
 
   return (
@@ -52,7 +52,7 @@ function EditUser() {
               </div>
             </div>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <button type="submit" className="px-6 py-2.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Update User</button>
+          <button type="submit" className="px-6 py-2.5 text-violet-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Update User</button>
           <button type="button" className="px-6 py-2.5 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">Cancel</button>
         </div>
       </ResponsiveForm>

@@ -48,7 +48,7 @@ function BankDetailsList() {
                 <option value={100}>100</option>
               </select>
               <span className="text-xs">entries</span>
-              <button className="ml-2 px-3 py-0.5 bg-orange-500 text-white rounded text-xs">Excel</button>
+              <button className="ml-2 px-3 py-0.5 text-violet-500 text-white rounded text-xs">Excel</button>
             </div>
             <div className="flex items-center gap-2 w-full sm:w-auto min-w-0">
               <span className="text-xs whitespace-nowrap">Search:</span>
@@ -100,7 +100,7 @@ function BankDetailsList() {
                     <td className="py-0.5 px-2 text-xs">
                       <div className="flex gap-1">
                         <button className="p-1 bg-green-500 text-white rounded hover:bg-green-600"><Check className="w-3 h-3" /></button>
-                        <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Reject</button>
+                        <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Reject</button>
                       </div>
                     </td>
                   </tr>
@@ -114,7 +114,7 @@ function BankDetailsList() {
             </div>
             <div className="flex gap-2">
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Previous</button>
-              <button className="px-3 py-1 bg-orange-500 text-white rounded">1</button>
+              <button className="px-3 py-1 text-violet-500 text-white rounded">1</button>
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Next</button>
             </div>
           </div>

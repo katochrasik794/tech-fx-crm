@@ -29,7 +29,7 @@ function UploadUserDocuments() {
               <label className="block text-sm font-medium mb-2">Proof of Address (POA) <span className="text-red-500">*</span></label>
               <input type="file" className="w-full border rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
             </div>
-            <button type="submit" className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 font-medium">Submit</button>
+            <button type="submit" className="text-violet-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 font-medium">Submit</button>
           </form>
         </div>
       </div>

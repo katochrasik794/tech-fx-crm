@@ -66,7 +66,7 @@ function AddUser() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-2 pt-2">
-            <button type="submit" className="px-4 py-1.5 text-xs bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Add User</button>
+            <button type="submit" className="px-4 py-1.5 text-xs text-violet-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Add User</button>
             <button type="button" className="px-4 py-1.5 text-xs border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">Cancel</button>
           </div>
         </ResponsiveForm>

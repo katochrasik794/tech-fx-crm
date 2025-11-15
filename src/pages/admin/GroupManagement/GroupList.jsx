@@ -85,7 +85,7 @@ function GroupList() {
                     <td className="py-0.5 px-2 text-xs">{group.mt5GroupName}</td>
                     <td className="py-0.5 px-2 text-green-600 text-xs">{group.status}</td>
                     <td className="py-0.5 px-2 text-xs">
-                      <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
+                      <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
                     </td>
                   </tr>
                 ))}
@@ -97,7 +97,7 @@ function GroupList() {
             <div className="flex gap-2">
               <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Previous</button>
               {[...Array(totalPages)].map((_, i) => (
-                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
               ))}
               <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Next</button>
             </div>

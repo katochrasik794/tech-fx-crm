@@ -12,13 +12,13 @@ function SetIBCommission() {
   const [currentPage, setCurrentPage] = useState(1)
   
   const commissionsData = [
-    { id: 1, planName: 'Common', name: 'Techysquad', email: 'crm@techysquad.com', date: '2025-06-13' },
+    { id: 1, planName: 'Common', name: 'FinCRM', email: 'crm@FinCRM.com', date: '2025-06-13' },
     { id: 2, planName: 'Common', name: 'Dev Account', email: 'patelsinol@gmail.com', date: '2025-06-13' },
     { id: 3, planName: 'Common', name: 'Demo CLient', email: 'democlientts@demo.com', date: '2025-06-13' },
     { id: 4, planName: 'Default', name: '', email: '', date: '2025-06-25' },
     { id: 5, planName: 'Default', name: 'Abhishek', email: 'abhishek5319@gmail.com', date: '2025-07-10' },
     { id: 6, planName: 'master', name: 'Dev Account 2', email: 'patelsinol1@gmail.com', date: '2025-09-22' },
-    { id: 7, planName: 'ABC', name: 'Bijal TS', email: 'bijal@techysquad.com', date: '2025-09-24' },
+    { id: 7, planName: 'ABC', name: 'Bijal TS', email: 'bijal@FinCRM.com', date: '2025-09-24' },
     { id: 8, planName: 'ABC 2', name: 'Asfa', email: 'asfaazeem6@gmail.com', date: '2025-09-24' },
   ]
 
@@ -57,7 +57,7 @@ function SetIBCommission() {
       <div className="flex-1 lg:ml-64 mt-12 p-4 lg:p-8 w-full bg-gray-50 min-h-screen">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-xl font-bold">User Commission List</h1>
-          <Link to="/admin/ib/commission/add" className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 text-sm">Add User Commission</Link>
+          <Link to="/admin/ib/commission/add" className="px-4 py-2 text-violet-500 text-white rounded hover:bg-orange-600 text-sm">Add User Commission</Link>
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm">
           <div className="flex justify-between items-center mb-6">
@@ -96,7 +96,7 @@ function SetIBCommission() {
                     <td className="py-0.5 px-2 text-blue-600 text-xs">{comm.email || '-'}</td>
                     <td className="py-0.5 px-2 text-xs">{comm.date}</td>
                     <td className="py-0.5 px-2 text-xs">
-                      <button className="px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
+                      <button className="px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Edit</button>
                     </td>
                   </tr>
                 ))}
@@ -108,7 +108,7 @@ function SetIBCommission() {
             <div className="flex gap-2">
               <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Previous</button>
               {[...Array(totalPages)].map((_, i) => (
-                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+                <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-3 py-1 border rounded text-xs ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
               ))}
               <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs">Next</button>
             </div>

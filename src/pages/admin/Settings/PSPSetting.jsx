@@ -86,7 +86,7 @@ const PSPSetting = () => {
                 <input type="number" placeholder="Enter Order No." value={formData.orderNo} onChange={(e) => setFormData({...formData, orderNo: e.target.value})} className="w-full border border-gray-300 rounded px-2 py-1.5 text-sm" required />
               </div>
             </div>
-            <button type="submit" className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm mt-4">Submit</button>
+            <button type="submit" className="text-violet-500 text-white px-4 py-1.5 rounded text-sm mt-4">Submit</button>
           </form>
         </div>
 
@@ -116,10 +116,10 @@ const PSPSetting = () => {
                   <td className="py-0.5 px-2">{item.date}</td>
                   <td className="py-0.5 px-2">
                     <div className="flex gap-1">
-                      <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
+                      <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
                         <Edit className="w-3 h-3" /> Edit
                       </button>
-                      <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
+                      <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1">
                         <Trash2 className="w-3 h-3" /> Delete
                       </button>
                     </div>

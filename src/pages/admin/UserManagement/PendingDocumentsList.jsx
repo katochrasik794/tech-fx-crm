@@ -83,10 +83,10 @@ function PendingDocumentsList() {
                     <td className="py-1 px-3 text-sm whitespace-nowrap">{doc.marketingName}</td>
                     <td className="py-1 px-3 text-sm">
                       <div className="flex gap-2">
-                        <button className="p-2 bg-orange-500 text-white rounded hover:bg-orange-600"><Edit className="w-4 h-4" /></button>
-                        <button className="p-2 bg-orange-500 text-white rounded hover:bg-orange-600"><Eye className="w-4 h-4" /></button>
-                        <button className="p-2 bg-orange-500 text-white rounded hover:bg-orange-600"><Settings className="w-4 h-4" /></button>
-                        <button className="p-2 bg-orange-500 text-white rounded hover:bg-orange-600"><Trash2 className="w-4 h-4" /></button>
+                        <button className="p-2 text-violet-500 text-white rounded hover:bg-orange-600"><Edit className="w-4 h-4" /></button>
+                        <button className="p-2 text-violet-500 text-white rounded hover:bg-orange-600"><Eye className="w-4 h-4" /></button>
+                        <button className="p-2 text-violet-500 text-white rounded hover:bg-orange-600"><Settings className="w-4 h-4" /></button>
+                        <button className="p-2 text-violet-500 text-white rounded hover:bg-orange-600"><Trash2 className="w-4 h-4" /></button>
                       </div>
                     </td>
                   </tr>
@@ -100,7 +100,7 @@ function PendingDocumentsList() {
             </div>
             <div className="flex gap-2">
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Previous</button>
-              <button className="px-3 py-1 bg-orange-500 text-white rounded">1</button>
+              <button className="px-3 py-1 text-violet-500 text-white rounded">1</button>
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Next</button>
             </div>
           </div>

@@ -68,7 +68,7 @@ function AddBankDetails() {
               <input type="file" className="w-full border rounded-lg px-4 py-2.5 text-xs" onChange={(e) => setFormData({...formData, bookBank: e.target.files[0]})} />
             </div>
             <div className="col-span-1 md:col-span-3">
-              <button type="submit" className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">Submit</button>
+              <button type="submit" className="text-violet-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">Submit</button>
             </div>
           </form>
         </div>

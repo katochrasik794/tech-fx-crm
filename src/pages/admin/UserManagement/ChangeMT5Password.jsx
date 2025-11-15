@@ -25,7 +25,7 @@ function ChangeMT5Password() {
             <label className="block text-xs font-medium mb-1">Main Password <span className="text-red-500">*</span></label>
             <div className="flex">
               <input type="password" placeholder="Enter Main Password" className="flex-1 px-3 py-1.5 text-xs sm:text-sm border border-r-0 rounded-l-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" value={formData.mainPassword} onChange={(e) => setFormData({...formData, mainPassword: e.target.value})} />
-              <button type="button" className="px-3 bg-orange-500 text-white rounded-r-lg hover:bg-orange-600">
+              <button type="button" className="px-3 text-violet-500 text-white rounded-r-lg hover:bg-orange-600">
                 <Key className="w-3 h-3" />
               </button>
             </div>
@@ -34,12 +34,12 @@ function ChangeMT5Password() {
             <label className="block text-xs font-medium mb-1">Investor Password <span className="text-red-500">*</span></label>
             <div className="flex">
               <input type="password" placeholder="Enter Investor Password" className="flex-1 px-3 py-1.5 text-xs sm:text-sm border border-r-0 rounded-l-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" value={formData.investorPassword} onChange={(e) => setFormData({...formData, investorPassword: e.target.value})} />
-              <button type="button" className="px-3 bg-orange-500 text-white rounded-r-lg hover:bg-orange-600">
+              <button type="button" className="px-3 text-violet-500 text-white rounded-r-lg hover:bg-orange-600">
                 <Key className="w-3 h-3" />
               </button>
             </div>
           </div>
-          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm bg-orange-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
+          <button type="submit" className="px-4 py-1.5 text-xs sm:text-sm text-violet-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
         </form>
       </div>
     </ResponsiveAdminLayout>

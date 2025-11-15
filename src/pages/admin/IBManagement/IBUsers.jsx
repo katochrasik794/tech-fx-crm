@@ -10,15 +10,15 @@ function IBUsers() {
   const [currentPage, setCurrentPage] = useState(1)
   
   const ibUsersData = [
-    { id: 1, name: 'demo', email: 'har33h@techysquad.com', phone: '+91 09846543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: 'Developer Account' },
+    { id: 1, name: 'demo', email: 'har33h@FinCRM.com', phone: '+91 09846543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: 'Developer Account' },
     { id: 2, name: 'Demo User', email: 'democlient@ts.com', phone: '919854745254', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: 'John Smith' },
     { id: 3, name: 'Client Name2', email: 'clientname2@testing.com', phone: '9876543212', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 4, name: 'Demo user', email: 'demouser032@demo.com', phone: '09876543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 5, name: 'Test user', email: 'testus2er9239@demo23sdw2.com', phone: '09876543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
-    { id: 6, name: 'Developer Account', email: 'harsh@techysquad.com', phone: '09876543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
+    { id: 6, name: 'Developer Account', email: 'harsh@FinCRM.com', phone: '09876543210', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 7, name: 'Abhishek', email: 'abhilahk5319@gmail.com', phone: '+91 7218808586', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 8, name: 'Asfa', email: 'asfaazeem6@gmail.com', phone: '+92 3353017487', country: 'Pakistan', ibName: 'Abhishek', totalCommission: 0, availableCommission: 0, marketingName: '' },
-    { id: 9, name: 'Bijal TS', email: 'bijal@techysquad.com', phone: '+91 12334455697', country: 'India', ibName: 'Dev Account 2', totalCommission: 0, availableCommission: 0, marketingName: '' },
+    { id: 9, name: 'Bijal TS', email: 'bijal@FinCRM.com', phone: '+91 12334455697', country: 'India', ibName: 'Dev Account 2', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 10, name: 'Dev Account 2', email: 'patelsinoli@gmail.com', phone: '+91 9854824183', country: 'India', ibName: 'Dev Account', totalCommission: 0, availableCommission: 0, marketingName: 'John Smith' },
     { id: 11, name: 'Test User 11', email: 'test11@demo.com', phone: '09876543211', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
     { id: 12, name: 'Test User 12', email: 'test12@demo.com', phone: '09876543212', country: 'India', ibName: '', totalCommission: 0, availableCommission: 0, marketingName: '' },
@@ -71,7 +71,7 @@ function IBUsers() {
               <option value={50}>50</option>
             </select>
             <span className="whitespace-nowrap">entries</span>
-            <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">Excel</button>
+            <button className="ml-2 sm:ml-4 px-3 sm:px-4 py-1.5 sm:py-2 text-violet-500 text-white rounded hover:bg-orange-600 text-xs sm:text-sm whitespace-nowrap">Excel</button>
           </div>
           <div className="relative w-full sm:w-64 min-w-0">
             <Search className="absolute left-3 top-2.5 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
@@ -122,14 +122,14 @@ function IBUsers() {
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ boxSizing: 'border-box', overflow: 'hidden' }}>{user.totalCommission}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ boxSizing: 'border-box', overflow: 'hidden' }}>{user.availableCommission}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <button onClick={() => handleCopy(`https://example.com/ref/${user.id}`)} className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap">Copy</button>
+                  <button onClick={() => handleCopy(`https://example.com/ref/${user.id}`)} className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap">Copy</button>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ boxSizing: 'border-box', overflow: 'hidden' }}>{user.marketingName || '-'}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ boxSizing: 'border-box', overflow: 'hidden' }}>
                   <div className="flex gap-0.5 sm:gap-1 flex-wrap" style={{ maxWidth: '100%' }}>
-                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">View Level</button>
-                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">View Commission</button>
-                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Tree Chart</button>
+                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">View Level</button>
+                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">View Commission</button>
+                    <button className="px-1 sm:px-1.5 py-0.5 sm:py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Tree Chart</button>
                   </div>
                 </td>
               </tr>
@@ -143,7 +143,7 @@ function IBUsers() {
         <div className="flex flex-wrap gap-2 w-full sm:w-auto justify-center sm:justify-end">
           <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-2 sm:px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs sm:text-sm whitespace-nowrap">Previous</button>
           {[...Array(totalPages)].map((_, i) => (
-            <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+            <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
           ))}
           <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-2 sm:px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs sm:text-sm whitespace-nowrap">Next</button>
         </div>

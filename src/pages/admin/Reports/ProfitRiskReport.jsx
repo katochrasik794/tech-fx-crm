@@ -12,7 +12,7 @@ const ProfitRiskReport = () => {
     { name: 'Demo User', login: '100007798', balance: 0, credit: 0, equityPrevDay: 0, equity: 0, floating: 0, netDeposit: 0, currentProfit: 0, totalProfit: 0 },
     { name: 'Maira', login: '100007817', balance: 0, credit: 0, equityPrevDay: 0, equity: 0, floating: 0, netDeposit: 0, currentProfit: 0, totalProfit: 0 },
     { name: 'Maira', login: '100007816', balance: 3230, credit: 0, equityPrevDay: 3230, equity: 3230, floating: 0, netDeposit: 3230, currentProfit: 0, totalProfit: 0 },
-    { name: 'Techysquad', login: '100007802', balance: 0, credit: 0, equityPrevDay: 0, equity: 0, floating: 0, netDeposit: 0, currentProfit: 0, totalProfit: 0 }
+    { name: 'FinCRM', login: '100007802', balance: 0, credit: 0, equityPrevDay: 0, equity: 0, floating: 0, netDeposit: 0, currentProfit: 0, totalProfit: 0 }
   ];
 
   return (
@@ -71,7 +71,7 @@ const ProfitRiskReport = () => {
                     <td className="py-0.5 px-2">{item.totalProfit}</td>
                     <td className="py-0.5 px-2">
                       <div className="flex flex-col gap-1">
-                        <button className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">Open Positions</button>
+                        <button className="text-violet-500 text-white px-2 py-0.5 rounded text-xs">Open Positions</button>
                         <button className="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs">Close Deals</button>
                       </div>
                     </td>
@@ -85,7 +85,7 @@ const ProfitRiskReport = () => {
             <div>Showing 1 to 5 of 5 entries</div>
             <div className="flex gap-1">
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Previous</button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">1</button>
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">1</button>
               <button disabled className="px-3 py-1 border border-gray-300 rounded bg-gray-100 text-gray-400">Next</button>
             </div>
           </div>

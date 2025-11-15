@@ -8,11 +8,11 @@ function MarketingList() {
   const [currentPage, setCurrentPage] = useState(1)
   
   const marketingData = [
-    { serial: 1, name: 'Developer Account', email: 'harsh@techysquad.com', phone: '932883933', walletBalance: 0, incentive: 1, netDeposit: 10000, totalClients: 1, totalDeposit: 0, totalWithdraw: 0, password: '12345678', role: 'Team Manager', managerName: '' },
+    { serial: 1, name: 'Developer Account', email: 'harsh@FinCRM.com', phone: '932883933', walletBalance: 0, incentive: 1, netDeposit: 10000, totalClients: 1, totalDeposit: 0, totalWithdraw: 0, password: '12345678', role: 'Team Manager', managerName: '' },
     { serial: 2, name: 'new marketting', email: 'newmarketinguserdemo@gmail.com', phone: '923932023', walletBalance: 0, incentive: 1, netDeposit: 10000, totalClients: 1, totalDeposit: 0, totalWithdraw: 0, password: '12345678', role: 'Team Manager', managerName: '' },
     { serial: 3, name: 'marketinguser', email: 'demo@marketinguser.com', phone: '09876543210', walletBalance: 0, incentive: 2, netDeposit: 10000, totalClients: 1, totalDeposit: 0, totalWithdraw: 0, password: 'De0e@23je9d932', role: 'Team Manager', managerName: '' },
-    { serial: 4, name: 'Paul Wilson', email: 'tsmarketing@techysquad.com', phone: '9999999999', walletBalance: 0, incentive: 3, netDeposit: 2000, totalClients: 0, totalDeposit: 0, totalWithdraw: 0, password: 'Marketing@321', role: 'Team Manager', managerName: '' },
-    { serial: 5, name: 'John Smith', email: 'marketing@techysquad.com', phone: '8888888888', walletBalance: 0, incentive: 2, netDeposit: 1000, totalClients: 70, totalDeposit: 24450, totalWithdraw: 6940, password: 'Marketing@321', role: 'Team Manager', managerName: '' },
+    { serial: 4, name: 'Paul Wilson', email: 'tsmarketing@FinCRM.com', phone: '9999999999', walletBalance: 0, incentive: 3, netDeposit: 2000, totalClients: 0, totalDeposit: 0, totalWithdraw: 0, password: 'Marketing@321', role: 'Team Manager', managerName: '' },
+    { serial: 5, name: 'John Smith', email: 'marketing@FinCRM.com', phone: '8888888888', walletBalance: 0, incentive: 2, netDeposit: 1000, totalClients: 70, totalDeposit: 24450, totalWithdraw: 6940, password: 'Marketing@321', role: 'Team Manager', managerName: '' },
   ]
 
   const filteredData = marketingData.filter(item => 
@@ -93,25 +93,25 @@ function MarketingList() {
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '80px', minWidth: '80px', maxWidth: '80px', boxSizing: 'border-box', overflow: 'hidden' }}>{item.incentive}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-blue-600 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '120px', minWidth: '120px', maxWidth: '120px', boxSizing: 'border-box', overflow: 'hidden' }}>{item.netDeposit}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '90px', minWidth: '90px', maxWidth: '90px', boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <span className="px-1 sm:px-1.5 py-0.5 bg-orange-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalClients}</span>
+                  <span className="px-1 sm:px-1.5 py-0.5 text-violet-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalClients}</span>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '100px', minWidth: '100px', maxWidth: '100px', boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <span className="px-1 sm:px-1.5 py-0.5 bg-orange-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalDeposit}</span>
+                  <span className="px-1 sm:px-1.5 py-0.5 text-violet-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalDeposit}</span>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '100px', minWidth: '100px', maxWidth: '100px', boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <span className="px-1 sm:px-1.5 py-0.5 bg-orange-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalWithdraw}</span>
+                  <span className="px-1 sm:px-1.5 py-0.5 text-violet-500 text-white rounded text-[9px] sm:text-[10px] whitespace-nowrap">{item.totalWithdraw}</span>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '120px', minWidth: '120px', maxWidth: '120px', boxSizing: 'border-box', overflow: 'hidden' }}>{item.password}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '100px', minWidth: '100px', maxWidth: '100px', boxSizing: 'border-box', overflow: 'hidden' }}>{item.role}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '100px', minWidth: '100px', maxWidth: '100px', boxSizing: 'border-box', overflow: 'hidden' }}>{item.managerName || '-'}</td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '130px', minWidth: '130px', maxWidth: '130px', boxSizing: 'border-box', overflow: 'hidden' }}>
                   <div className="flex gap-0.5 sm:gap-1" style={{ maxWidth: '100%' }}>
-                    <button className="px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Edit</button>
-                    <button className="px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Delete</button>
+                    <button className="px-1.5 sm:px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Edit</button>
+                    <button className="px-1.5 sm:px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Delete</button>
                   </div>
                 </td>
                 <td className="py-1 sm:py-1.5 px-1.5 sm:px-2 text-[10px] sm:text-xs whitespace-nowrap" style={{ width: '120px', minWidth: '120px', maxWidth: '120px', boxSizing: 'border-box', overflow: 'hidden' }}>
-                  <button className="px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Edit Permission</button>
+                  <button className="px-1.5 sm:px-2 py-0.5 text-violet-500 text-white rounded hover:bg-orange-600 text-[9px] sm:text-[10px] whitespace-nowrap flex-shrink-0">Edit Permission</button>
                 </td>
               </tr>
             ))}
@@ -124,7 +124,7 @@ function MarketingList() {
         <div className="flex flex-wrap gap-2 w-full sm:w-auto justify-center sm:justify-end">
           <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="px-2 sm:px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs sm:text-sm whitespace-nowrap">Previous</button>
           {[...Array(totalPages)].map((_, i) => (
-            <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === i + 1 ? 'bg-orange-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
+            <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`px-2 sm:px-3 py-1 border rounded text-xs sm:text-sm whitespace-nowrap ${currentPage === i + 1 ? 'text-violet-500 text-white' : 'hover:bg-gray-100'}`}>{i + 1}</button>
           ))}
           <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="px-2 sm:px-3 py-1 border rounded hover:bg-gray-100 disabled:opacity-50 text-xs sm:text-sm whitespace-nowrap">Next</button>
         </div>

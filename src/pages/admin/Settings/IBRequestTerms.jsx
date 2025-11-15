@@ -42,7 +42,7 @@ const IBRequestTerms = () => {
                 <textarea placeholder="Enter Terms & Conditions" value={formData.termsConditions} onChange={(e) => setFormData({...formData, termsConditions: e.target.value})} className="w-full border border-gray-300 rounded px-2 py-1.5 text-sm h-32" required />
               </div>
             </div>
-            <button type="submit" className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm mt-4">Submit</button>
+            <button type="submit" className="text-violet-500 text-white px-4 py-1.5 rounded text-sm mt-4">Submit</button>
           </form>
         </div>
       </div>

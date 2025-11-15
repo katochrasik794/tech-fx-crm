@@ -12,7 +12,7 @@ function ApprovedDocumentsList() {
   const documents = [
     { id: 1, name: 'Demo user', email: 'demouser032@demo.com', phone: '09876543210', registrationDate: '2025-08-24', marketingName: '' },
     { id: 2, name: 'Dev Account', email: 'patelsino1@gmail.com', phone: '+91 9847854865', registrationDate: '2025-06-12', marketingName: 'John Smith' },
-    { id: 3, name: 'Techysquad', email: 'crm@techysquad.com', phone: '+91 09876543210', registrationDate: '2025-06-12', marketingName: 'John Smith' },
+    { id: 3, name: 'FinCRM', email: 'crm@FinCRM.com', phone: '+91 09876543210', registrationDate: '2025-06-12', marketingName: 'John Smith' },
   ]
 
   const handleSort = (field) => {
@@ -85,7 +85,7 @@ function ApprovedDocumentsList() {
                     <td className="py-1 px-3 text-sm whitespace-nowrap">{doc.marketingName}</td>
                     <td className="py-1 px-3 text-sm">
                       <Link to="/admin/user/documents-details">
-                        <button className="px-4 py-1 bg-orange-500 text-white rounded hover:bg-orange-600 text-xs">Details</button>
+                        <button className="px-4 py-1 text-violet-500 text-white rounded hover:bg-orange-600 text-xs">Details</button>
                       </Link>
                     </td>
                   </tr>
@@ -99,7 +99,7 @@ function ApprovedDocumentsList() {
             </div>
             <div className="flex gap-2">
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Previous</button>
-              <button className="px-3 py-1 bg-orange-500 text-white rounded">1</button>
+              <button className="px-3 py-1 text-violet-500 text-white rounded">1</button>
               <button className="px-3 py-1 border rounded hover:bg-gray-50">Next</button>
             </div>
           </div>

@@ -47,7 +47,7 @@ function News() {
                     <div className="p-3 sm:p-4 lg:p-6">
                       <h3 className="font-bold text-sm sm:text-base lg:text-lg mb-2 sm:mb-3 line-clamp-2">{article.title}</h3>
                       <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-3">{article.description}</p>
-                      <button className="text-orange-500 font-semibold text-xs sm:text-sm hover:text-orange-600">view more</button>
+                      <button className="text-violet-500 font-semibold text-xs sm:text-sm hover:text-orange-600">view more</button>
                     </div>
                   </div>
                   )
@@ -62,7 +62,7 @@ function News() {
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />
                     <p className="text-xs sm:text-sm text-gray-600 mb-2">Chat with us</p>
-                    <button className="bg-orange-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
+                    <button className="text-violet-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">Click here</button>
                   </div>
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
                     <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 text-gray-600" />
@@ -80,7 +80,7 @@ function News() {
                   </div>
                   <h4 className="font-semibold text-xs sm:text-sm mb-2 line-clamp-2">GBP/USD attracts some buyers above 1.3550 after Middle East ceasefire</h4>
                   <p className="text-xs text-gray-600 mb-3 line-clamp-3">The GBP/USD pair gains traction to around 1.3560 during the early European session on Tuesday, bolstered by the weaker US...</p>
-                  <button className="text-orange-500 font-semibold text-xs sm:text-sm hover:text-orange-600">view more</button>
+                  <button className="text-violet-500 font-semibold text-xs sm:text-sm hover:text-orange-600">view more</button>
                 </div>
               </div>
             </div>

@@ -127,7 +127,7 @@ const NewsList = () => {
       <div className="flex-1 lg:ml-64 mt-12 p-4 lg:p-8 w-full bg-gray-50 min-h-screen">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-lg font-bold">News List</h1>
-          <button onClick={handleAddNews} className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm">
+          <button onClick={handleAddNews} className="text-violet-500 text-white px-4 py-1.5 rounded text-sm">
             Add News
           </button>
         </div>
@@ -225,7 +225,7 @@ const NewsList = () => {
                 </div>
               </div>
               <div className="flex gap-2 mt-4">
-                <button type="submit" className="bg-orange-500 text-white px-4 py-1.5 rounded text-sm">
+                <button type="submit" className="text-violet-500 text-white px-4 py-1.5 rounded text-sm">
                   Submit
                 </button>
                 <button type="button" onClick={handleCancel} className="bg-gray-500 text-white px-4 py-1.5 rounded text-sm">
@@ -299,14 +299,14 @@ const NewsList = () => {
                       <div className="flex flex-col gap-1">
                         <button
                           onClick={() => handleEdit(news.id)}
-                          className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1"
+                          className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1"
                         >
                           <Edit className="w-3 h-3" />
                           Edit
                         </button>
                         <button
                           onClick={() => handleDelete(news.id)}
-                          className="bg-orange-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1"
+                          className="text-violet-500 text-white px-2 py-0.5 rounded text-xs flex items-center gap-1"
                         >
                           <Trash2 className="w-3 h-3" />
                           Delete
@@ -330,7 +330,7 @@ const NewsList = () => {
               >
                 Previous
               </button>
-              <button className="px-3 py-1 border border-gray-300 rounded bg-orange-500 text-white">
+              <button className="px-3 py-1 border border-gray-300 rounded text-violet-500 text-white">
                 1
               </button>
               <button
