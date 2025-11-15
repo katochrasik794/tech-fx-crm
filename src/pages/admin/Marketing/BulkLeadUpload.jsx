@@ -1,0 +1,33 @@
+import { useState } from 'react'
+import AdminSidebar from '../../../components/AdminSidebar'
+import AdminHeader from '../../../components/AdminHeader'
+
+function BulkLeadUpload() {
+  const [formData, setFormData] = useState({ marketing: '', file: null })
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Upload:', formData)
+  }
+
+  return (
+    <div className="flex">
+      <AdminSidebar />
+      <AdminHeader />
+      <div className="flex-1 lg:ml-64 mt-12 p-4 lg:p-8 w-full bg-gray-50 min-h-screen">
+        <h1 className="text-lg font-bold mb-4">Bulk Upload Leads</h1>
+        <div className="bg-white rounded-2xl p-4 shadow-sm max-w-2xl">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-xs font-medium mb-1">Select File <span className="text-red-500">*</span></label>
+              <input type="file" accept=".csv,.xlsx" className="w-full px-2 py-1.5 text-sm border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent" onChange={(e) => setFormData({...formData, file: e.target.files[0]})} required />
+            </div>
+            <button type="submit" className="px-4 py-1.5 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default BulkLeadUpload
