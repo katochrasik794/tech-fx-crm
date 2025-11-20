@@ -45,7 +45,7 @@ function AdminSidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
     {isSidebarOpen && (
       <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden" onClick={closeSidebar}></div>
     )}
-    <div className={`w-64 h-screen bg-white shadow-lg overflow-y-scroll fixed left-0 top-0 z-50 border-r border-gray-200 transition-transform duration-300 ${
+    <div className={`w-64 h-screen bg-white/95 backdrop-blur-sm shadow-lg overflow-y-scroll fixed left-0 top-0 z-50 border-r border-gray-200 transition-transform duration-300 ${
       isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
     }`}>
       <button onClick={closeSidebar} className="lg:hidden absolute top-4 right-4 p-1 hover:bg-gray-100 rounded">
@@ -57,7 +57,7 @@ function AdminSidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
         </div>
 
         <nav className="space-y-1">
-          <Link to="/admin/dashboard" onClick={handleLinkClick} className={`flex items-center gap-2 p-2 rounded ${location.pathname === '/admin/dashboard' || location.pathname === '/admin' ? 'bg-violet-500 text-white' : 'hover:text-violet-500 hover:text-white'}`}>
+          <Link to="/admin/dashboard" onClick={handleLinkClick} className={`flex items-center gap-2 p-2 rounded ${location.pathname === '/admin/dashboard' || location.pathname === '/admin' ? 'bg-violet-500 text-white' : 'hover:bg-violet-50 hover:text-violet-600'}`}>
             <LayoutDashboard className="w-4 h-4" />
             <span className="text-xs">Dashboard</span>
           </Link>
@@ -341,7 +341,7 @@ function AdminSidebar({ logoSrc = '/logo.png', logoAlt = 'FINCRM' }) {
             <span className="text-white font-bold">?</span>
           </div>
           <p className="text-sm font-semibold mb-2">Need Help ?</p>
-          <button className="text-violet-500 text-sm font-semibold hover:text-orange-600">Go to help desk</button>
+          <button className="text-violet-500 text-sm font-semibold hover:text-violet-600">Go to help desk</button>
         </div>
       </div>
     </div>

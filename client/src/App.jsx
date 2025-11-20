@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SidebarProvider } from './context/SidebarContext'
+import Login from './pages/auth/Login'
+import Register from './pages/auth/Register'
 import Dashboard from './pages/user/Dashboard/Dashboard'
 import Regulations from './pages/user/Regulations/Regulations'
 import Deposit from './pages/user/MyFund/Deposit'
@@ -116,6 +118,8 @@ function App() {
     <SidebarProvider>
     <BrowserRouter>
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/regulations" element={<Regulations />} />

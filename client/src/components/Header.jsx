@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { useSidebar } from '../context/SidebarContext'
 
-function Header() {
+function Header({ userImage = '/user.jpg' }) {
   const { mobileMenuOpen, setMobileMenuOpen } = useSidebar()
   const [showNotifications, setShowNotifications] = useState(false)
   const [showLanguage, setShowLanguage] = useState(false)
@@ -22,7 +22,7 @@ function Header() {
   return (
     <div className="fixed top-0 left-0 right-0 lg:top-4 lg:left-4 lg:right-auto lg:w-72 bg-white shadow-md z-[60] px-2 py-2 lg:px-4 lg:py-3 flex items-center justify-between gap-1 lg:gap-2 border-b lg:border lg:border-gray-200 lg:rounded-3xl">
         <Link to="/profile" className="w-8 h-8 lg:w-12 lg:h-12 rounded-full overflow-hidden flex-shrink-0">
-          <img src="https://via.placeholder.com/48" alt="Profile" className="w-full h-full object-cover" />
+          <img src={userImage} alt="Profile" className="w-full h-full object-cover" />
         </Link>
 
         <div className="flex items-center gap-4">
